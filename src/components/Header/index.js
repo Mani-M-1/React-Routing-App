@@ -11,7 +11,7 @@ const Header = () => {
 
     const [sidebar, setSidebar] = useState(false);
 
-    const onClickBurgerIcon = () => {
+    const onClickIcon = () => {
         setSidebar(!sidebar);
     }
 
@@ -36,13 +36,13 @@ const Header = () => {
                         </Link>
                     </li>
                 </ul>
-                <button type='button' className='burger-btn' onClick={onClickBurgerIcon}>
+                <button type='button' className='burger-btn' onClick={onClickIcon}>
                     <SlMenu className='burger-icon'/>
                 </button>
 
             </nav>
             {/* sidebar item  */}
-            <ul className={sidebar ? 'sidebar-menu' : 'sidebar-menu inactive'} onClick={onClickBurgerIcon}>
+            <ul className={sidebar ? 'sidebar-menu' : 'sidebar-menu inactive'} onClick={onClickIcon}>
                 <li className='cross-item'>
                     <button type='button' className='burger-btn'>
                         <IoMdClose className='close-icon'/>
@@ -63,16 +63,6 @@ const Header = () => {
                             Contact
                     </li>
                 </Link>
-                {/* <li className='sidebar-menu-items'>
-                    <Link to='/about' className='sidebar-link-items'>
-                        About
-                    </Link>
-                </li>
-                <li className='sidebar-menu-items'>
-                    <Link to='/contact' className='sidebar-link-items'>
-                        Contact
-                    </Link>
-                </li> */}
             </ul>
         </>
     )
