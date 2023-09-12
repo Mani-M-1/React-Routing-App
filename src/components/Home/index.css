@@ -1,0 +1,50 @@
+.home-text {
+    margin-bottom: 40px;
+}
+
+.scrolling-section {
+    display: flex;
+    align-items: center;
+}
+
+#scrollingContainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
+
+#scrollingContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.image-card {
+    width: 300px;
+    height: 400px;
+}
+
+.image-card:hover {
+    transform: scale(1.1);
+}
+
+.scrollable-images {
+    width: 300px;
+    height: 100%;
+}
+
+.controllers-card {
+    padding: 6px 8px;
+    margin: 6px;
+    border-radius: 50%;
+}
+
+.controllers-card:hover {
+    background-color: rgb(227, 227, 227);
+}
+
+.controller-icons {
+    font-size: 20px;
+}
